@@ -24,6 +24,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
-  },
-  "homepage":"freemax.cafe24app.com"
+  }
 }

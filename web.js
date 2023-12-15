@@ -4,7 +4,7 @@ const app = express()
 const PORT = process.env.PORT || 8001;
 
 app.get('/',function(req, res){
-    res.sendFile( path.join(__dirname, './front/public/index.html'))
+    res.sendFile( path.join(__dirname, 'front/public/index.html'))
 })
 
 //라우터없다면

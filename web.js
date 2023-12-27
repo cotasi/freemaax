@@ -3,10 +3,10 @@ const path = require('path')
 const app = express()
 const PORT = process.env.PORT || 8001
 
-app.use(express.static(path.join(__dirname,'front/public')))
+app.use(express.static(path.join(__dirname,'front/build')))
 
 app.get('/',function(req, res){
-    res.sendFile( path.join(__dirname, '/front/public/index.html'))
+    res.sen8dFile( path.join(__dirname, 'front/build/index.html'))
 })
 
 app.listen(PORT, () => {

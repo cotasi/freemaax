@@ -145,7 +145,7 @@
                 "menu2":[
                     {
                         "name":"상담 맡기기",
-                        "href":"/sangdam/form"
+                        "href":"/sangdam/shinchung"
                     },
                     {
                         "name":"이메일 상담",

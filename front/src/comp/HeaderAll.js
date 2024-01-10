@@ -1,5 +1,6 @@
 import React from 'react';
 import Hall from '../scss/header.module.scss';
+import Data from '../Data/Data.json';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,7 +14,7 @@ return (
         <Navbar expand="lg" className="bg-body-teriary position-relative">
             <div className={`${Hall.hcontainer} d-flex justify-content-between align-items-center`}>
                 <Navbar.Brand as={Link} to="/"><img src="/img/freemax_logo.png" alt="logo"></img></Navbar.Brand>
-                <Nav className={`${Hall.navmain}`}>
+                {/* <Nav className={`${Hall.navmain}`}>
                     <Nav.Link>사업소개
                         <Nav className={`${Hall.submain} position-absolute`}>
                             <Nav.Link>기업 CI</Nav.Link>
@@ -30,6 +31,25 @@ return (
                     </Nav.Link>
                     <Nav.Link>프로모션 이벤트</Nav.Link>
                     <Nav.Link>고객센터</Nav.Link> 
+                </Nav> */}
+                <Nav className={`${Hall.navmain}`}>
+                    {
+                        Data[2].menu.map((첫,둘)=>{
+                            return(
+                                <Nav.Link as={Link} to={첫.href1}>{첫.menu1}
+                                    <Nav className={`${Hall.submin} position-absolute`}>
+                                       {
+                                        첫.menu2.map((셋,넷)=>{
+                                            return(
+                                                <Nav.Link as={Link} to={셋.href}>{셋.name}</Nav.Link>
+                                            )
+                                        })
+                                       }  
+                                       </Nav>       
+                                </Nav.Link>
+                            );
+                        })
+                    }
                 </Nav>
                 <NavDropdown title="KR" id="basic-nav-dropdown">
                      <h2 className="m-0">언어 선택</h2>

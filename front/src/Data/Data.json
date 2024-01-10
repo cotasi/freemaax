@@ -100,5 +100,87 @@
                 "regionimg": "/img/region2-02.svg"
             }
         ]
+    },
+    {
+        "menu": [
+            {
+                "menu1":"사업소개",
+                "href1":"/com",
+                "menu2":[
+                    {
+                        "name":"기업CI",
+                        "href":"com/ci"
+                    },
+                    {
+                        "name":"상세 소개",
+                        "href":"com/real"
+                    },
+                    {
+                        "name":"서비스 소개",
+                        "href":"com/service"
+                    }
+                ]
+            },
+            {
+                "menu1":"지역별 버스",
+                "href1":"/region",
+                "menu2":[
+                    {
+                        "name":"경기도",
+                        "href":"/region/gyeong"
+                    },
+                    {
+                        "name":"강원도",
+                        "href":"/region/gang"
+                    },
+                    {
+                        "name":"부산광역시",
+                        "href":"/region/busan"
+                    }
+                ]
+            },
+            {
+                "menu1":"상담원 신청",
+                "href1":"/sangdam",
+                "menu2":[
+                    {
+                        "name":"상담 맡기기",
+                        "href":"/sangdam/form"
+                    },
+                    {
+                        "name":"이메일 상담",
+                        "href":"/sangdam/email"
+                    }
+                ]
+            },
+            {
+                "menu1":"프로모션 이벤트",
+                "href1":"/promotion",
+                "menu2":[
+                    {
+                        "name":"현재 이벤트",
+                        "href":"/promotion/present"
+                    },
+                    {
+                        "name":"지난 이벤트",
+                        "href":"/promotion/last"
+                    }
+                ]
+            },
+            {
+                "menu1":"고객센터",
+                "href1":"/customer",
+                "menu2":[
+                    {
+                        "name":"1:1상담",
+                        "href":"/customer/onetoone"
+                    },
+                    {
+                        "name":"Q&A",
+                        "href":"/customer/qa"
+                    }
+                ]
+            }
+        ]
     }
 ]

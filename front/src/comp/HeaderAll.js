@@ -37,7 +37,7 @@ return (
                         Data[2].menu.map((첫,둘)=>{
                             return(
                                 <Nav.Link as={Link} to={첫.href1}>{첫.menu1}
-                                    <Nav className={`${Hall.submin} position-absolute`}>
+                                    <Nav className={`${Hall.submain} position-absolute`}>
                                        {
                                         첫.menu2.map((셋,넷)=>{
                                             return(

@@ -14,7 +14,7 @@
 
 .headerall .hcontainer .navmain > a { position: relative;}
 
-.headerall .hcontainer .navmain:hover::after {content: ''; position: absolute; left: 0; right: 0; top: 100%; display: block; background-color: black; border-top: 1px solid rgba(255,255,255,.5); height: 50px;}
+.headerall .hcontainer .navmain:hover::after {content: ''; position: absolute; left: 0; right: 0; top: 100%; display: block; background-color: black; border-top: 1px solid rgba(255,255,255,.5); height: 50px; z-index: 1000000;}
 
 .headerall .hcontainer .navmain .submain { top: 100%; left: 0; right: -200%; display: none; z-index: 1000000;}
 

@@ -59,7 +59,7 @@ const Slider = () => {
                                     <p>{ee.swiper2text2}</p>
                                     <p>{ee.swiper2lasttext}</p>
                                 </div>
-                                <div id="map" style={{width:'500px',height:'500px'}}></div>
+                                <div id="map" style={{width:'500px',height:'500px',textAlign:'center'}}></div>
                                 </SwiperSlide>
                             )
                         })

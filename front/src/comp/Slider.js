@@ -17,7 +17,7 @@ const Slider = () => {
     const [fswiper,setfswiper] = useState(null);
     const [sswiper,setsswiper] = useState(null);
 
-    const {kakao} = window;
+const {kakao} = window;
 
     useEffect(()=>{
         const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -27,6 +27,7 @@ const Slider = () => {
             };
         const map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
     },[])
+
 
 
 

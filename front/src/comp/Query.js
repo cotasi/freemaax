@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import Q from '../scss/query.module.scss';
+import QNavi from './QNavi';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useForm } from 'react-hook-form';
+
 
 
 const Query = () => {
     const {register, handleSubmit} = useForm();
 
     return (
+    <>
+      <QNavi></QNavi>
       <div className={`${Q.mainquery}`}>
         <h2><span>상담 양식을</span> 확인해주세요</h2>
         <h3>고객님의 의견을 적극 반영하겠습니다.</h3>
@@ -30,6 +34,7 @@ const Query = () => {
             </Form>
         </div>
       </div>
+    </>
     );
 };
 

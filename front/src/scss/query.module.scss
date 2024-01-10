@@ -1,0 +1,9 @@
+.mainquery > h2 {padding-top: 100px; text-align: center; font-size: 35px; }
+.mainquery h2 span {font-weight: bold; display: inline-block; position: relative;}
+.mainquery h2 span::after {content: ''; display: block; position: absolute; left: 0; right: 0; bottom: 5%; height: 10px; background-color:#ffb800; z-index: -1;}
+.mainquery h3 { font-size: 20px; text-align: center; padding-top: 20px; font-weight: lighter;}
+.mainquery .querycon { margin-top: 60px;}
+.mainquery .querycon h2 { font-size: 1.1em; padding-bottom: 30px;}
+.mainquery .querycon form { display: block; width: 40%; margin: 0 auto;}
+.mainquery .querycon form > div { padding-bottom: 30px;}
+.mainquery .querycon form > div:last-of-type { text-align: center;}

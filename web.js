@@ -11,4 +11,4 @@ app.get('/',function(req, res){
 
 app.listen(PORT, () => {
     console.log( `${PORT} 노드서버구동정상` )
- })
+ }) 

@@ -1,0 +1,32 @@
+.headerall { /* position: fixed; top: 0; left: 0; right: 0; */}
+
+.headerall > nav {padding: 0; background-color: black;}
+
+.headerall .hcontainer { width: 90%; margin: 0 auto;}
+
+.headerall .hcontainer > a { padding: 0; margin: 0;}
+
+.headerall .hcontainer > a img { width: 250px;}
+
+.headerall .hcontainer > div a { color: white !important; font-weight: 400 !important; padding: 30px 0; display: block;}
+
+.headerall .hcontainer .navmain a { padding: 29px 30px;}
+
+.headerall .hcontainer .navmain > a { position: relative;}
+
+.headerall .hcontainer .navmain:hover::after {content: ''; position: absolute; left: 0; right: 0; top: 100%; display: block; background-color: black; border-top: 1px solid rgba(255,255,255,.5); height: 50px;}
+
+.headerall .hcontainer .navmain .submain { top: 100%; left: 0; right: -200%; display: none; z-index: 1000000;}
+
+.headerall .hcontainer .navmain .submain a { color: white!important; padding: 13px;}
+
+.headerall .hcontainer .navmain > a:hover .submain { display: flex; }
+
+.headerall .hcontainer .navmain > a:hover { color: #50bdff !important; border-bottom: 2px solid #50bdff;}
+
+
+.headerall .hcontainer .searchbtn {display: flex; justify-content: center; align-items: center; background-color: transparent; border: none;}
+
+.headerall .hcontainer .searchbtn span { display: block; text-indent: -9999em;}
+
+.headerall .hcontainer .searchbtn::after {content: ''; background: url('../img/searchbtn.png') no-repeat center/cover; display: block; width: 20px; height: 20px;}

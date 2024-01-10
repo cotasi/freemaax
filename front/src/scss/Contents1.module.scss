@@ -1,0 +1,21 @@
+.backg { background-color: #fafafa; }
+
+.backg > h2 {font-size: 25px; text-align: center; font-weight: bold; padding-top: 60px; padding-bottom: 60px;}
+
+.backg .swiperwrap {margin: 0 20%; padding-bottom: 60px; }
+
+.backg .swiperwrap .slideflex { display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+.backg .swiperwrap .swiperimgwrap { width: 50px; height: 50px; overflow: hidden; border-radius: 50%;}
+
+.backg .swiperwrap .swiperimgwrap + div { width: 100%; text-align: center; padding-top: 10px; color: #005585; font-weight: normal;}
+
+.backg .swiperwrap .datatable { text-align: center; margin-bottom: 30px;}
+
+.backg .swiperwrap .datacon2 { padding: 10px 0; background-color: rgb(244, 241, 241,.21); }
+
+.backg .swiperwrap .datacon .datacon2:first-child { border-top: 3px solid black;}
+
+.backg .swiperwrap .datacon .datacon2 { border-bottom: 1px solid rgba(0,0,0,.2);}
+
+.backg .swiperwrap .datacon2 > div { text-align: center;}

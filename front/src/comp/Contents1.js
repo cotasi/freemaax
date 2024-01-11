@@ -14,7 +14,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { FreeMode, Pagination, Navigation, Controller } from 'swiper/modules';
+import { FreeMode, Pagination, Navigation, Controller, EffectFade } from 'swiper/modules';
+import { Fade } from 'react-bootstrap';
 
 
 const Contents1 = () => {
@@ -39,7 +40,7 @@ const Contents1 = () => {
                         })
                     }
                 </Swiper>
-                <Swiper modules={[Controller]} onSwiper={setsecondswiper} controller={{ control: firstswiper}}>
+                <Swiper effect={Fade} modules={[Controller]} onSwiper={setsecondswiper} controller={{ control: firstswiper}}>
                                 <SwiperSlide>
                                     <div className={`${C1.datatable} d-flex`}>
                                         <span className="col">지역</span>

@@ -36,3 +36,13 @@
 .headerall .hcontainer .hambtn { justify-content: center; align-items: center; border: none; background-color: transparent;}
 
 .headerall .hcontainer .hambtn i::before {font-size: 35px;}
+
+.headerall .hcontainer .mobile {width: 100%; height: auto; background-color: black; left: 0; top: 100%; display: block; z-index: 1000000; transform: translateY(-200%); transition: all .4s;}
+
+.headerall .hcontainer .mobile > a {text-align: center; border-top: 1px solid rgba(255,255,255,.2); padding: 20px 0;}
+
+.headerall .hcontainer .mobile > a:hover .mobilesub {height: 120px;}
+
+.headerall .hcontainer .mobile .mobilesub {height: 0; overflow: hidden; transition: all .4s; flex-direction: column;}
+
+.headerall .hcontainer .mobile .mobilesub a {padding: 0; padding-top: 15px; font-weight: lighter !important;}

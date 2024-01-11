@@ -9,7 +9,7 @@ import { useForm } from 'react-hook-form';
 
 
 const Query = () => {
-    const {register, handleSubmit} = useForm();
+    const {register, handleSubmit,watch,formState: {errors}} = useForm();
 
     return (
     <>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Hall from '../scss/header.module.scss';
 import Data from '../Data/Data.json';
 
@@ -9,6 +9,15 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 const HeaderAll = () => {
+    const hamcallback = ()=> {
+
+        document.querySelector('.mobile').classList.toggle('mobileon');
+        document.querySelector('button.ham').classList.toggle('hamon');
+
+    }
+
+
+
 return (
     <div className={`${Hall.headerall}`}>
         <Navbar expand="lg" className="bg-body-teriary position-relative">
@@ -32,7 +41,7 @@ return (
                     <Nav.Link>프로모션 이벤트</Nav.Link>
                     <Nav.Link>고객센터</Nav.Link> 
                 </Nav> */}
-                <Nav className={`${Hall.navmain} d-xl-flex d-none`}>
+                <Nav className={`${Hall.navmain} d-xl-flex d-none ham`}>
                     {
                         Data[2].menu.map((첫,둘)=>{
                             return(
@@ -58,10 +67,29 @@ return (
                 </NavDropdown>
                 <Button className={`${Hall.searchbtn} d-xl-flex d-none`}><span>검색하기</span>                     
                 </Button>
-                <Button className={`${Hall.hambtn} d-flex d-xl-none`}>
+                <Button className={`${Hall.hambtn} d-flex d-xl-none ham`} onClick={hamcallback}>
                     <span>햄버거버튼</span>
                     <i class="bi bi-list"></i>
                 </Button>
+                <Nav className={`${Hall.mobile} mobile d-xl-none position-absolute d-block`}>
+                    {
+                        Data[2].menu.map((첫,둘)=>{
+                            return(
+                                <Nav.Link as={Link} to={첫.href1}>{첫.menu1}
+                                    <Nav className={`${Hall.mobilesub}`}>
+                                       {
+                                        첫.menu2.map((셋,넷)=>{
+                                            return(
+                                                <Nav.Link as={Link} to={셋.href}>{셋.name}</Nav.Link>
+                                            )
+                                        })
+                                       }  
+                                       </Nav>       
+                                </Nav.Link>
+                            );
+                        })
+                    }
+                </Nav>
             </div>
         </Navbar>
     </div>

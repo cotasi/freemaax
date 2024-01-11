@@ -120,6 +120,8 @@ body {
     overflow: hidden;
 }
 
+.reswiper .swiper-wrapper { justify-content: center;}
+
 .reswiper .swiper-slide { width: 50px !important;}
 
 .reswiper .swiper-slide > div { opacity: .2;}

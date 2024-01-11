@@ -160,13 +160,17 @@ body {
     overflow: hidden;
 }
 
-.reswiper .swiper-wrapper { justify-content: center; transform: translate3d(0,0,0) !important; gap: 10px;}
+.reswiper .swiper-wrapper { justify-content: center; transform: translate3d(0,0,0) !important; align-items: center;}
 
-.reswiper .swiper-slide { width: 50px !important;}
+.reswiper .swiper-slide { width: 150px !important; height: 20%; border: 1px solid #005585; border-right: none;}
+
+.reswiper .swiper-slide:last-child { border-right: 1px solid #005585;}
 
 .reswiper .swiper-slide > div { opacity: .2;}
 
-.reswiper .swiper-slide-active > div { opacity:1; }
+.reswiper .swiper-slide-active { background-color: #005585;}
+
+.reswiper .swiper-slide-active > div { opacity:1; color: white; }
 
 
 .newsliderwrap .swiper-button-prev::after {content: '\F286'; font-family: 'bootstrap-icons'; color: black; font-size: 25px;}

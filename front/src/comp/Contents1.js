@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState, useEffect }from 'react';
 import C1 from '../scss/Contents1.module.scss';
 import Data from '../Data/Data.json';
 import gbus from '../Data/gyeonggibus.json';
@@ -17,10 +17,20 @@ import 'swiper/css/navigation';
 import { FreeMode, Pagination, Navigation, Controller, EffectFade } from 'swiper/modules';
 import { Fade } from 'react-bootstrap';
 
+const {kakao} = window;
 
 const Contents1 = () => {
     const [firstswiper,setfirstswiper] = useState(null);
     const [secondswiper,setsecondswiper] = useState(null);
+
+    useEffect(()=>{
+        const container = document.getElementById('map');
+        const options = {
+            center: new kakao.maps.LatLng(33.450701,126.570667),
+            level:3
+        }
+        const map = new kakao.maps.Map(container,options);
+    })
 
     return (
         <div className={`${C1.backg}`}>
@@ -31,9 +41,6 @@ const Contents1 = () => {
                         Data[1].choice.map((eeee,iiii)=>{
                             return(
                                 <SwiperSlide key={iiii} className={`${C1.slideflex}`}>
-                                    <div className={`${C1.swiperimgwrap}`}>
-                                        <img src={eeee.regionimg} alt={iiii} />
-                                    </div>
                                     <div>{eeee.region}</div>
                                 </SwiperSlide>
                             )
@@ -42,27 +49,7 @@ const Contents1 = () => {
                 </Swiper>
                 <Swiper effect={Fade} modules={[Controller]} onSwiper={setsecondswiper} controller={{ control: firstswiper}}>
                                 <SwiperSlide>
-                                    <div className={`${C1.datatable} d-flex`}>
-                                        <span className="col">지역</span>
-                                        <span className="col">시작점</span>
-                                        <span className="col">종점</span>
-                                        <span className="col">버스 매니징 넘버</span>
-                                    </div>
-                                    <div className={`${C1.datacon}`}>
-                                        {
-                                            gbus.BusStation.row.map((eee,iii)=>{
-                                                return(
-                                                <div className={`${C1.datacon2} d-flex`}>
-                                                    <div className="col">{eee.SIGUN_NM}</div>
-                                                    <div className="col">{eee.STATION_NM_INFO}</div>
-                                                    <div className="col">{eee.STATION_DIV_NM}</div>
-                                                    <div className="col">{eee.STATION_MANAGE_NO}</div>
-                                                </div>
-                                                )
-
-                                            })
-                                        }
-                                    </div>
+                                    <div id="map" style={{width: "500px",height:"500px"}}></div>
                                 </SwiperSlide>
                                 <SwiperSlide>1</SwiperSlide>
                                 <SwiperSlide>2</SwiperSlide>

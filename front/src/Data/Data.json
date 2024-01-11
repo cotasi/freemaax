@@ -39,40 +39,6 @@
                     "swiper2lasttext": "아래 지도를 클릭하세요."
                 }
             ]
-        },
-        {
-            "swiper3" : [
-                {
-                    "swiper3img":"/img/System_01.jpg",
-                    "swiper3text1":"서울지역예약",
-                    "swiper3arrive":"강남역",
-                    "swiper3ment":"서울 모든 지역의 광역버스를/예약을 통해 받고 있습니다./무예약 탑승은 받고 있지 않습니다.",
-                    "swiperprice":"2500/3500"
-                },
-                {
-                    "swiper3img":"/img/System_01.jpg",
-                    "swiper3text1":"서울지역예약",
-                    "swiper3arrive":"강남역",
-                    "swiper3ment":"서울 모든 지역의 광역버스를/예약을 통해 받고 있습니다./무예약 탑승은 받고 있지 않습니다.",
-                    "swiperprice":"2500/3500"
-                }
-                ,
-                {
-                    "swiper3img":"/img/System_01.jpg",
-                    "swiper3text1":"서울지역예약",
-                    "swiper3arrive":"강남역",
-                    "swiper3ment":"서울 모든 지역의 광역버스를/예약을 통해 받고 있습니다./무예약 탑승은 받고 있지 않습니다.",
-                    "swiperprice":"2500/3500"
-                }
-                ,
-                {
-                    "swiper3img":"/img/System_01.jpg",
-                    "swiper3text1":"서울지역예약",
-                    "swiper3arrive":"강남역",
-                    "swiper3ment":"서울 모든 지역의 광역버스를/예약을 통해 받고 있습니다./무예약 탑승은 받고 있지 않습니다.",
-                    "swiperprice":"2500/3500"
-                }
-            ]
         }
     ]
     },
@@ -91,27 +57,11 @@
                 "regionimg": "/img/region2-02.svg"
             },
             {
-                "region": "서울시",
-                "regionimg": "/img/region1-01.svg"
-            },
-            {
-                "region" : "경기도",
-                "regionimg": "/img/region1-01.svg"
-            },
-            {
-                "region": "강원도",
+                "region": "제주도",
                 "regionimg": "/img/region2-02.svg"
             },
             {
-                "region": "서울시",
-                "regionimg": "/img/region1-01.svg"
-            },
-            {
-                "region" : "경기도",
-                "regionimg": "/img/region1-01.svg"
-            },
-            {
-                "region": "강원도",
+                "region": "부산 광역시",
                 "regionimg": "/img/region2-02.svg"
             }
         ]

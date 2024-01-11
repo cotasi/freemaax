@@ -48,13 +48,16 @@ const Contents1 = () => {
                     }
                 </Swiper>
                 <Swiper effect={Fade} navigation={true} modules={[Controller,Navigation]} slidesPerView={3} onSwiper={setsecondswiper} controller={{ control: firstswiper}} className="twoswiper">
-                                <SwiperSlide>
+                               {
+                                gbus.BusStation.row.map((e,i)=>{
+                                    return(
+                                        <SwiperSlide>
                                     <div id="map" style={{width: "500px",height:"500px"}}></div>
-                                </SwiperSlide>
-                                <SwiperSlide>1</SwiperSlide>
-                                <SwiperSlide>2</SwiperSlide>
-                                <SwiperSlide>3</SwiperSlide>
-                                <SwiperSlide>4</SwiperSlide>
+                                        </SwiperSlide>
+                                    )
+                                })
+                               }
+                               
                 </Swiper>
             </div>
         </div>

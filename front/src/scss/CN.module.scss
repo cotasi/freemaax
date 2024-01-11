@@ -1,0 +1,12 @@
+.cnavimain { background-color: black; padding: 0 5%; }
+.cnavimain h1 { padding-right: 30px !important; position: relative;}
+.cnavimain h1::after {content: ''; height: 50%; position: absolute; right: 12%; top: 50%; transform: translateY(-50%); width: 2px; background-color: rgba(255,255,255,.4);}
+.cnavimain h1 img {width: 80px; transform: translateY(-5px);}
+.cnavimain a { text-decoration: none; color: white;}
+.cnavimain .mainm > a { padding: 16px 25px;}
+.cnavimain .mainm i {margin-left: .8em;}
+.cnavimain .mainm > a:hover i::before {transform: rotate(0);}
+.cnavimain .mainm > a:hover div { height: 100px; border: 1px solid black; border-top: none;}
+.cnavimain .mainm i::before {transform: rotate(180deg); transition: all .4s;}
+.cnavimain .mainm .subm { top: 100%; left: 0; right: 0; border: 1px solid black; border-top: none; height: 0; overflow: hidden; border: none; transition: all .4s;}
+.cnavimain .mainm .subm a { color: black !important; padding: 10px 0; display: block; text-align: center;}

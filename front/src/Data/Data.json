@@ -4,10 +4,25 @@
         {
             "swiper1" : [
                 {
-                    "swiper1img": "/img/bus_bg.jpg"
+                    "swiper1img": "/img/busslide01.jpg",
+                    "index": "01",
+                    "subject":"다채로운/버스 즐기기",
+                    "text":"지금 상담",
+                    "bgc":"#f1e8e2"
                 },
                 {
-                    "swiper1img": "/img/bus_bg.jpg"
+                    "swiper1img": "/img/busslide02.jpg",
+                    "index": "02",
+                    "subject":"다채로운/버스 즐기기",
+                    "text":"지금 상담",
+                    "bgc":"#fff"
+                },
+                {
+                    "swiper1img": "/img/busslide03.jpg",
+                    "index": "02",
+                    "subject":"다채로운/버스 즐기기",
+                    "text":"지금 상담",
+                    "bgc":"fff"
                 }
             ]
         },
@@ -105,6 +120,7 @@
         "menu": [
             {
                 "menu1":"사업소개",
+                "menuen":"Introduction",
                 "href1":"/com",
                 "menu2":[
                     {
@@ -123,6 +139,7 @@
             },
             {
                 "menu1":"지역별 버스",
+                "menuen":"Bus Region",
                 "href1":"/region",
                 "menu2":[
                     {
@@ -141,6 +158,7 @@
             },
             {
                 "menu1":"상담원 신청",
+                "menuen":"form",
                 "href1":"/sangdam",
                 "menu2":[
                     {
@@ -155,6 +173,7 @@
             },
             {
                 "menu1":"프로모션 이벤트",
+                "menuen":"Promotion",
                 "href1":"/promotion",
                 "menu2":[
                     {
@@ -169,6 +188,7 @@
             },
             {
                 "menu1":"고객센터",
+                "menuen":"Customer",
                 "href1":"/customer",
                 "menu2":[
                     {

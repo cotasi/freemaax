@@ -1,7 +1,8 @@
-import React, { useState,useEffect }from 'react';
-import Slide from '../scss/slide.module.scss';
+import React, { useState } from 'react';
 
-import {Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import styled from 'styled-components';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,65 +12,98 @@ import { Pagination, Navigation, Controller } from 'swiper/modules';
 
 import Data from '../Data/Data.json';
 
-import region from '../Data/station_coordinate.json'
 
 const Slider = () => {
-    const [fswiper,setfswiper] = useState(null);
-    const [sswiper,setsswiper] = useState(null);
 
-/* const {kakao} = window;
 
-    useEffect(()=>{
-        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        const options = { //지도를 생성할 때 필요한 기본 옵션
-	        center: new kakao.maps.LatLng(region[0].lat, region[0].lng), //지도의 중심좌표.
-	        level: 3 //지도의 레벨(확대, 축소 정도)
-            };
-        const map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-    },[])
- */
+    const Slidermain = styled.div`
+        width: 100%;
+        height: 600px;
 
+    `;
+
+    const Swiperbgwrap = styled.div`
+        width: 100%;
+        height: 100%;
+        background-color:${(props) => props.pstyle};
+    `;
+
+    const Swipercontainer = styled.div`
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+    `;
+
+    const Imagwrap = styled.div`
+        width: 100%;
+    `;
+
+    const Images = styled.img`
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    `
+
+    const Textwrap = styled.div`
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    `;
+
+    const Textdivide = styled.div`
+        &:first-child {
+            font-size: 1.8em;
+        }
+        &:last-child {
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+    `;
+
+    const Formbtn = styled.button`
+        position: absolute;
+        bottom: 33%;
+        left: 0;
+        border: none;
+        background-color: #5f87f4;
+        padding: 0;
+        padding: 10px 26px;
+        border-radius: 30px;
+        font-size: 0.9em;
+        color: white;
+    `;
 
 
     return (
-        <div className={`${Slide.slidewrap} newsliderwrap`}>
-            <div className={`${Slide.slidenest} d-flex`}>
-                <Swiper className={`${Slide.mainslide1} col-6`} navigation={true} modules={[Controller,Navigation]} onSwiper={setfswiper} controller={{control: sswiper}}>
-                    {
-                        Data[0].swiper[0].swiper1.map((e,i)=>{
-                            return(
-                                <SwiperSlide>
-                                    <img src={e.swiper1img} alt={i}></img>
-                                </SwiperSlide>
-                            )
-                        })
-                    }
-                </Swiper>
-                <Swiper className={`${Slide.mainslide2} col-6`} modules={[Controller]} onSwiper={setsswiper} controller={{control: fswiper}}>
-                    {
-                        Data[0].swiper[1].swiper2.map((ee,ii)=>{
-                            return(
-                                <SwiperSlide className={`${Slide.mainslide2slide}`} >
-                                <div>
-                                    <h2>{
-
-                                        ee.swiper2text1.split('/').map((첫첫,둘둘)=>{
-                                            return(
-                                                <div>{첫첫}</div>
-                                            )
-                                        })
-                                        }</h2>
-                                    <p>{ee.swiper2text2}</p>
-                                    <p>{ee.swiper2lasttext}</p>
-                                </div>
-                                {/* <div id="map" style={{width:'500px',height:'500px',textAlign:'center'}}></div> */}
-                                </SwiperSlide>
-                            )
-                        })
-                    }
-                </Swiper>
-            </div>
-        </div>
+        <>
+            <Slidermain className="topswiper">
+               <Swiper navigation={true} modules={[Navigation,Pagination]} pagination={{type:'fraction'}}>
+                {
+                    Data[0].swiper[0].swiper1.map((e,i)=>{
+                        return(
+                            <SwiperSlide>
+                                <Swiperbgwrap pstyle={e.bgc}>
+                                    <Swipercontainer>
+                                        <Imagwrap><Images src={e.swiper1img} alt={i}></Images></Imagwrap>
+                                        <Textwrap>{
+                                                e.subject.split('/').map((첫,둘)=>{
+                                                    return(
+                                                        <Textdivide>{첫}</Textdivide>
+                                                    )
+                                                })
+                                            }</Textwrap>
+                                        <Formbtn>지금 상담</Formbtn>
+                                    </Swipercontainer>
+                                </Swiperbgwrap>
+                            </SwiperSlide>
+                        )
+                    })
+                }
+               </Swiper>
+            </Slidermain>
+        </>
     );
 };
 

@@ -172,16 +172,7 @@ body {
 
 .reswiper .swiper-slide-active > div { opacity:1; color: white; }
 
-
-.newsliderwrap .swiper-button-prev::after {content: '\F286'; font-family: 'bootstrap-icons'; color: black; font-size: 25px;}
-
-.newsliderwrap .swiper-button-prev { width: 50px; height: 50px; background-color: white; border-radius: 50%; top: 5%; left: 50% !important; transform: translateX(-50%); opacity: 1;}
-
-.newsliderwrap .swiper-button-next::after {content: '\F286'; font-family: 'bootstrap-icons'; color: black; font-size: 25px; transform: rotate(180deg);}
-
-.newsliderwrap .swiper-button-next { width: 50px; height: 50px; background-color: white; border-radius: 50%; top: unset; bottom: 5%; left: 50% !important; transform: translateX(-50%); opacity: 1;}
-
-.newsliderwrap #map {left: 50%; transform: translateX(-50%);}
+.reswiper #map { left: 50% !important; transform: translateX(-50%) !important;}
 
 /* 햄버거 버튼 */
 

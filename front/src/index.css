@@ -120,6 +120,8 @@ body {
     overflow: hidden;
 }
 
+.reswiper .swiper-slide { width: 50px !important;}
+
 .reswiper .swiper-slide > div { opacity: .2;}
 
 .reswiper .swiper-slide-active { opacity:1; }

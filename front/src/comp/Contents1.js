@@ -29,7 +29,7 @@ const Contents1 = () => {
                     {
                         Data[1].choice.map((eeee,iiii)=>{
                             return(
-                                <SwiperSlide key={iiii}>
+                                <SwiperSlide key={iiii} className={`${C1.slideflex}`}>
                                     <div className={`${C1.swiperimgwrap}`}>
                                         <img src={eeee.regionimg} alt={iiii} />
                                     </div>

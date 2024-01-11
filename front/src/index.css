@@ -126,7 +126,7 @@ body {
 
 .reswiper .swiper-slide > div { opacity: .2;}
 
-.reswiper .swiper-slide-active { opacity:1; }
+.reswiper .swiper-slide-active > div { opacity:1; }
 
 
 .newsliderwrap .swiper-button-prev::after {content: '\F286'; font-family: 'bootstrap-icons'; color: black; font-size: 25px;}

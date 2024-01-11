@@ -30,3 +30,7 @@
 .headerall .hcontainer .searchbtn span { display: block; text-indent: -9999em;}
 
 .headerall .hcontainer .searchbtn::after {content: ''; background: url('../img/searchbtn.png') no-repeat center/cover; display: block; width: 20px; height: 20px;}
+
+.headerall .hcontainer .hambtn span {display: block; text-indent: -9999em;}
+
+.headerall .hcontainer .hambtn { justify-content: center; align-items: center;}

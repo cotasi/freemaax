@@ -25,7 +25,7 @@ const Contents1 = () => {
         <div className={`${C1.backg}`}>
             <h2>버스 지역 선택하기</h2>
             <div className={`${C1.swiperwrap}`}>
-                <Swiper modules={[Controller,Pagination,Navigation]} slidesPerView={8} onSwiper={setfirstswiper} navigation={true} controller={{control: secondswiper}} className={`${C1.regionswiper} reswiper`}>
+                <Swiper modules={[Controller,Pagination,Navigation]} slidesPerView={8} spaceBetween={30} pagination={{clickable:true}} onSwiper={setfirstswiper} navigation={true} controller={{control: secondswiper}} className={`${C1.regionswiper} reswiper`}>
                     {
                         Data[1].choice.map((eeee,iiii)=>{
                             return(

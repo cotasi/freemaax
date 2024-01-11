@@ -172,7 +172,7 @@ body {
 
 .reswiper .swiper-slide-active > div { opacity:1; color: white; }
 
-.reswiper #map { left: 50% !important; transform: translateX(-50%) !important;}
+.twoswiper #map { left: 50% !important; transform: translateX(-50%) !important;}
 
 /* 햄버거 버튼 */
 

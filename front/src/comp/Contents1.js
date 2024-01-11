@@ -47,7 +47,7 @@ const Contents1 = () => {
                         })
                     }
                 </Swiper>
-                <Swiper effect={Fade} modules={[Controller]} onSwiper={setsecondswiper} controller={{ control: firstswiper}}>
+                <Swiper effect={Fade} modules={[Controller]} onSwiper={setsecondswiper} controller={{ control: firstswiper}} className="twoswiper">
                                 <SwiperSlide>
                                     <div id="map" style={{width: "500px",height:"500px"}}></div>
                                 </SwiperSlide>

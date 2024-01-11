@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Q from '../scss/query.module.scss';
 import QNavi from './QNavi';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 const Query = () => {
     const {register, handleSubmit,watch,formState: {errors}} = useForm();

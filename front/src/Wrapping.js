@@ -13,7 +13,6 @@ const Wrapping = () => {
     return (
         <div>
             <HeaderAll />
-            <Modals></Modals>
             <Routes>
                 <Route path="/" element={<Main></Main>}></Route>
                 <Route path="/com/ci" element={<CI></CI>}></Route>

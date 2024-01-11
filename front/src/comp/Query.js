@@ -27,7 +27,7 @@ const Query = () => {
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>이메일</Form.Label>
-                    <Form.Control {...register("example required", { required: true })} name="emails" required type="text" placeholder="이름을 입력해주세요."></Form.Control>
+                    <Form.Control {...register("example required", { required: true })} required type="text" placeholder="이름을 입력해주세요."></Form.Control>
                     {errors.exampleRequired && <span>반드시 입력해주세요.</span>}
                 </Form.Group>
                 <Form.Group>

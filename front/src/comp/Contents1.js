@@ -47,7 +47,7 @@ const Contents1 = () => {
                         })
                     }
                 </Swiper>
-                <Swiper effect={Fade} navigation={true} modules={[Controller,Navigation]} slidesPerView={3} onSwiper={setsecondswiper} controller={{ control: firstswiper}} className="twoswiper">
+                <Swiper effect={Fade} navigation={true} modules={[Controller,Navigation,FreeMode]} freeMode={true} slidesPerView={3} onSwiper={setsecondswiper} controller={{ control: firstswiper}} className="twoswiper">
                                {
                                 gbus.BusStation.row.map((e,i)=>{
                                     return(

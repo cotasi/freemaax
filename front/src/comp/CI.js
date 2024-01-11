@@ -1,6 +1,8 @@
-import React from 'react';
+import React , { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import CNavi from './CNavi';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CIMain = styled.div`
     width: 100%;
@@ -9,8 +11,8 @@ const CIMain = styled.div`
 `;
 
 const Aboutwrap = styled.div`
-    position: fixed;
-    top: 20%;
+    position: absolute;
+    top: 40%;
 `;
 
 const Aboutus = styled.div`
@@ -53,6 +55,7 @@ const CIInfo = styled.div`
     padding: 0 20%;
     padding-top: 10%;
     background-color: white;
+    padding-bottom: 10%;
 `
 
 const CIHeading = styled.h1`
@@ -98,6 +101,7 @@ const CIText1 = styled.h2`
     font-size: 1.1em;
     font-weight: lighter;
     padding: 0;
+    padding-left: 10%;
     margin: 0;
 `;
 
@@ -107,20 +111,33 @@ const CIButton = styled.button`
     background-color:#DC2626;
     border: none;
     color: white;
+    & > i {
+        margin-left: .8em;
+    }
 `;
 
 const CI = () => {
+    const textscroll = useRef();
+    const empty = useRef();
+
+    useEffect(()=>{
+        AOS.init({
+            duration: 1000
+        });
+    })
+
+
     return (
     <>
        <CNavi></CNavi>
        <CIMain>
             <Aboutus>
-             <Aboutwrap>
+             <Aboutwrap ref={textscroll} data-aos="fade-up">
                 <Heading>ABOUT US</Heading>
                 <Heading2>CORPORATE IDENTITY</Heading2>
              </Aboutwrap>
             </Aboutus>
-            <Empty></Empty>
+            <Empty ref={empty}></Empty>
             <CIInfo>
                 <CIHeading>CI</CIHeading>
                 <CIConcept>
@@ -128,7 +145,9 @@ const CI = () => {
                     <CIText className="col-8">
                         <CIText1>SK Identity와 사명이 조합된 SK pucore의 Identifier입니다.<br></br>
                                 공식적인 상징으로서 적용 시 규정과 원칙을 반드시 준수하여 <br></br>왜곡, 변형되지 않도록 합니다.</CIText1>
-                        <CIButton>다운받기</CIButton>
+                        <CIButton><span>다운받기</span>
+                                  <i class="bi bi-download"></i>  
+                        </CIButton>
                     </CIText>
                 </CIConcept>
             </CIInfo>

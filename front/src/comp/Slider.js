@@ -54,11 +54,11 @@ const Slider = () => {
 
     const Textdivide = styled.div`
         &:first-child {
-            font-size: 1.8em;
+            font-size: 2.2em;
         }
         &:last-child {
-            font-size: 1.5em;
-            font-weight: normal;
+            font-size: 1.9em;
+            font-weight: 200 !important;
         }
     `;
 

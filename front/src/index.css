@@ -69,13 +69,13 @@ body {
     top: unset;
     bottom: 4%;
     right: unset;
-    left: 75%;
+    left: 70%;
 }
 
 .topswiper .swiper-button-next {
     bottom: 4%;
     left: unset;
-    right: 15%;
+    right: 22%;
     top: unset;
 }
 
@@ -85,7 +85,7 @@ body {
     background-color: rgba(0,0,0,.5);
     border-radius: 30px;
     color: white;
-    left: 77%;
+    left: 71%;
     right: unset;
     bottom: 18%;
 }

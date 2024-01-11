@@ -51,13 +51,12 @@ return (
                         })
                     }
                 </Nav>
-                <NavDropdown title="KR" id="basic-nav-dropdown">
+                <NavDropdown title="KR" id="basic-nav-dropdown" className="d-xl-block d-none">
                      <h2 className="m-0">언어 선택</h2>
                      <NavDropdown.Item href="#action/3.1">KR</NavDropdown.Item>
                      <NavDropdown.Item href="#action/3.1">EN</NavDropdown.Item>
                 </NavDropdown>
-                <Button className={`${Hall.searchbtn}`}><span>검색하기</span>
-                        
+                <Button className={`${Hall.searchbtn} d-xl-inline-block d-none`}><span>검색하기</span>                     
                 </Button>
             </div>
         </Navbar>

@@ -30,7 +30,7 @@ const Contents1 = () => {
                         Data[1].choice.map((eeee,iiii)=>{
                             return(
                                 <SwiperSlide key={iiii}>
-                                    <div className={`${C1.swiperimagewrap}`}>
+                                    <div className={`${C1.swiperimgwrap}`}>
                                         <img src={eeee.regionimg} alt={iiii} />
                                     </div>
                                     <div>{eeee.region}</div>

@@ -58,7 +58,7 @@ return (
                 </NavDropdown>
                 <Button className={`${Hall.searchbtn} d-xl-flex d-none`}><span>검색하기</span>                     
                 </Button>
-                <Button className={`${Hall.hambtn }d-flex d-xl-none`}>
+                <Button className={`${Hall.hambtn} d-flex d-xl-none`}>
                     <span>햄버거버튼</span>
                     <i class="bi bi-list"></i>
                 </Button>

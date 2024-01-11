@@ -23,7 +23,7 @@ const Slider = () => {
     `;
 
     const Swiperbgwrap = styled.div`
-        width: 100%;
+        width: auto;
         height: 100%;
         background-color:${(props) => props.pstyle};
     `;

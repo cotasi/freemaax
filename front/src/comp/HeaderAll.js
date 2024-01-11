@@ -56,7 +56,7 @@ return (
                      <NavDropdown.Item href="#action/3.1">KR</NavDropdown.Item>
                      <NavDropdown.Item href="#action/3.1">EN</NavDropdown.Item>
                 </NavDropdown>
-                <Button className={`${Hall.searchbtn} d-xl-inline-block d-none`}><span>검색하기</span>                     
+                <Button className={`${Hall.searchbtn} d-xl-flex d-none`}><span>검색하기</span>                     
                 </Button>
             </div>
         </Navbar>

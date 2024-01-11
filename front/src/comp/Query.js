@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Q from '../scss/query.module.scss';
 import QNavi from './QNavi';
@@ -18,20 +18,21 @@ const Query = () => {
         <h2><span>상담 양식을</span> 확인해주세요</h2>
         <h3>고객님의 의견을 적극 반영하겠습니다.</h3>
         <div className={`${Q.querycon}`}>
-            <Form onSubmit = {handleSubmit(onSubmit)}>
+            <form onSubmit = {handleSubmit(onSubmit)}>
                 <h2>상담정보</h2>
                 <Form.Group>
                     <Form.Label>이름</Form.Label>
                     <Form.Control defaultValue="test" {...register("example")}required type="text" placeholder="이름을 입력해주세요."></Form.Control>
+                    {/* regiser(...)가 name 속성이다. */}
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>이메일</Form.Label>
-                    <Form.Control {...register("example required", { required: true })} required type="text" placeholder="이름을 입력해주세요."></Form.Control>
+                    <Form.Control {...register("example required", { required: true })} name="emails" required type="text" placeholder="이름을 입력해주세요."></Form.Control>
                 </Form.Group>
                 <Form.Group>
-                    <Button type="submit">확인</Button>
+                    <Button type="submit" onClick="knowme()">확인</Button>
                 </Form.Group>
-            </Form>
+            </form>
         </div>
       </div>
     </>

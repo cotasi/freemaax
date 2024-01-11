@@ -120,29 +120,6 @@ body {
     overflow: hidden;
 }
 
-.reswiper .swiper-pagination .swiper-pagination-bullet > div > div {
-    width: 50px;
-    height: 50px;
-}
-
-.reswiper .swiper-pagination .swiper-pagination-bullet > div > div img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.reswiper .swiper-pagination .swiper-pagination-bullet > div:last-child {
-    color: rgb(5, 84, 133,.2);
-}
-
-.reswiper .swiper-pagination .swiper-pagination-bullet-active > div:first-child {
-    border: 2px solid #055585;
-}
-
-.reswiper .swiper-pagination .swiper-pagination-bullet-active > div:last-child {
-    color: #055585;
-}
-
 .newsliderwrap .swiper-button-prev::after {content: '\F286'; font-family: 'bootstrap-icons'; color: black; font-size: 25px;}
 
 .newsliderwrap .swiper-button-prev { width: 50px; height: 50px; background-color: white; border-radius: 50%; top: 5%; left: 50% !important; transform: translateX(-50%); opacity: 1;}

@@ -21,27 +21,20 @@ const Contents1 = () => {
     const [firstswiper,setfirstswiper] = useState(null);
     const [secondswiper,setsecondswiper] = useState(null);
 
-    const bullet = {
-        clickable: true,
-        renderBullet: function(i,c) {
-            return`<div class=${c}>
-                       <div>
-                            <div><img src=${Data[1].choice[i].regionimg}></img></div>
-                       </div>
-                       <div>${Data[1].choice[i].region}</div>
-                   </div>`;
-        }
-    }
-
     return (
         <div className={`${C1.backg}`}>
             <h2>버스 지역 선택하기</h2>
             <div className={`${C1.swiperwrap}`}>
-                <Swiper modules={[Controller,Pagination,Navigation]} onSwiper={setfirstswiper} navigation={true} controller={{control: secondswiper}} pagination={bullet} className={`${C1.regionswiper} reswiper`}>
+                <Swiper modules={[Controller,Pagination,Navigation]} slidesPerView={8} onSwiper={setfirstswiper} navigation={true} controller={{control: secondswiper}} className={`${C1.regionswiper} reswiper`}>
                     {
                         Data[1].choice.map((eeee,iiii)=>{
                             return(
-                                <SwiperSlide key={iiii}></SwiperSlide>
+                                <SwiperSlide key={iiii}>
+                                    <div className={`${C1.swiperimagewrap}`}>
+                                        <img src={eeee.regionimg} alt={iiii} />
+                                    </div>
+                                    <div>{eeee.region}</div>
+                                </SwiperSlide>
                             )
                         })
                     }

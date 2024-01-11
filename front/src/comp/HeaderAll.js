@@ -32,7 +32,7 @@ return (
                     <Nav.Link>프로모션 이벤트</Nav.Link>
                     <Nav.Link>고객센터</Nav.Link> 
                 </Nav> */}
-                <Nav className={`${Hall.navmain}`}>
+                <Nav className={`${Hall.navmain} d-xl-flex d-none`}>
                     {
                         Data[2].menu.map((첫,둘)=>{
                             return(

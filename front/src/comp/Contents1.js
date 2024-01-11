@@ -52,7 +52,7 @@ const Contents1 = () => {
                                 gbus.BusStation.row.map((e,i)=>{
                                     return(
                                         <SwiperSlide>
-                                    <div id="map"></div>
+                                    <div id="map" style={{height:"400px"}}></div>
                                         </SwiperSlide>
                                     )
                                 })

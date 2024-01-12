@@ -25,7 +25,7 @@ const MapInfowrapper = styled.div`
 
 const Mapwrapper = styled.div`
     width: 100%;
-    height: 200px;
+    height: 400px;
 `;
 
 const Mapinfo = () => {

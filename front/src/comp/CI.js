@@ -12,20 +12,34 @@ const CIMain = styled.div`
 
 const Aboutwrap = styled.div`
     position: absolute;
-    top: 40%;
+    top: 200px;
+    @media (max-width: 840px) {
+        top: 400px;
+    }
 `;
 
 const Aboutus = styled.div`
 padding: 0 20%;
-padding-bottom: 10%;
-padding-top: 10%;
 background-color: white;
-margin-bottom: 10%;
+height: 400px;
+>div {
+    @media (max-width: 840px) {
+        left: 50%;
+        transform: translateX(-50%) !important;
+    }
+}
+@media (max-width:840px) {
+    height: 800px;
+}
 `;
 
 const Heading = styled.h2`
     font-size: 1.3em;
     font-weight: bold;
+    @media (max-width: 840px) {
+        font-size: 1.1em;
+        text-align: center;
+    } 
 
 `;
 
@@ -39,6 +53,10 @@ const Heading2 = styled.h3`
     font-size: 3.8em;
     font-weight: bold;
     position: relative;
+    @media (max-width: 840px) {
+        font-size: 3.0em;
+        text-align: center;
+    }
     &::after {
         content: '';
         position: absolute;
@@ -48,14 +66,17 @@ const Heading2 = styled.h3`
         background-color: black;
         right: 110%;
         bottom: 40%;
+        @media (max-width: 840px) {
+            display: none;
+        }
     }
 `;
 
 const CIInfo = styled.div`
     padding: 0 20%;
-    padding-top: 10%;
+    padding-top: 150px;
     background-color: white;
-    padding-bottom: 10%;
+    padding-bottom: 150px;
 `
 
 const CIHeading = styled.h1`
@@ -77,6 +98,9 @@ const CIHeading = styled.h1`
 
 const CIConcept = styled.div `
     display: flex;
+    @media (max-width: 910px) {
+        flex-direction: column;
+    }
 `
 
 const CIConceptimg = styled.div`
@@ -84,25 +108,46 @@ const CIConceptimg = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    @media (max-width: 910px) {
+        width: 100%;
+    }
 `
 
 const RealImg = styled.img`
-    width: 500px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    @media (max-width: 910px) {
+        width: 70%;
+    }
 `
 
 const CIText = styled.div`
     height: 200px;
     padding: 0 5%;
+    @media (max-width: 910px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
 `;
 
 const CIText1 = styled.h2`
     height: 80%;
-    font-size: 1.1em;
+    font-size: 1.40em;
     font-weight: lighter;
     padding: 0;
-    padding-left: 10%;
+    padding-left: 60px;
     margin: 0;
+    @media (max-width: 1020px) {
+        font-size: 1.20em;
+    }
+    @media (max-width: 910px) {
+        height: 100%;
+        overflow: auto;
+    }
 `;
 
 const CIButton = styled.button`
@@ -113,6 +158,14 @@ const CIButton = styled.button`
     color: white;
     & > i {
         margin-left: .8em;
+        @media (max-width: 600px) {
+            margin: 0;
+            display: block;
+        }
+    }
+    @media (max-width: 600px) {
+        display: block;
+        height: 40%;
     }
 `;
 

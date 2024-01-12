@@ -1,0 +1,14 @@
+@media (max-width: 730px) {
+    .topswiper {
+        height: 1300px !important;
+    }
+    .topswiper > div {
+        height:400%;
+    }
+    .bestswiper {
+        height: 100%;
+    }
+    .bestswiper .swiper-slide-active img {
+        object-fit: none;
+    }
+}

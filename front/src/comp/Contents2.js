@@ -3,6 +3,7 @@ import Data from '../Data/Data.json';
 import gbus from '../Data/gyeonggibus.json';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useSpring, animated } from 'react-spring';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,7 +22,8 @@ import { Fade } from 'react-bootstrap';
 const Subcript = styled.div`
     width: 60%;
     margin: 0 auto;
-    margin-bottom: 5%;
+    margin-bottom: 80px;
+    padding-top: 80px;
     & > h2 {
         font-size: 1.6em;
         padding-bottom: 2%;
@@ -41,6 +43,7 @@ const PhotoSwiper = styled.div`
 
 const LegendPhoto = styled.div`
     height: 100%;
+    width: 100%;
 `;
 
 const Imgprops = styled.div`
@@ -84,6 +87,10 @@ const Contents2 = () => {
     },[]);
     clearInterval(Intervalout); */
 
+    const props = useSpring({
+        opacity: 1,
+        from: {opacity: 0},
+    });
 
     return (
         <div>
@@ -91,15 +98,17 @@ const Contents2 = () => {
                 <h2>예약 시스템 혜택</h2>
                 <p>예약 시스템을 이용하시는 VIP 고객님께 다음과 같은 혜택을 제공합니다.</p>
                 <PhotoSwiper>
-                    <Swiper onSwiper={setSwiperRefs} scrollbar={{hide: true,}} modules={[Navigation,Scrollbar,Pagination,Autoplay]} slidesPerView={3} centeredSlides={true} spaceBetween={10} /* autoplay={{delay:2500,disableOnInteraction: false,}} */ className="imgswiper">
+                    <Swiper initialSlide={1} loop={true} onSwiper={setSwiperRefs} scrollbar={{hide: true,}} modules={[Navigation,Scrollbar,Pagination,Autoplay]} slidesPerView={3} centeredSlides={true} spaceBetween={10} /* autoplay={{delay:2500,disableOnInteraction: false,}} */ className="imgswiper">
                         {
                             Data[0].swiper[3].fassionswiper.map((ee,ii)=>{
                                 return(
                                     <SwiperSlide>
+                                      <animated.div style={props}>
                                         <LegendPhoto /* onMouseEnter={Interval} onMouseOut={Intervalout} */>
                                             <Imgprops img1={ee.img1} img2={ee.img2} img3={ee.img3}></Imgprops>
                                             <Phototext>{ee.texter}</Phototext>
                                         </LegendPhoto>
+                                        </animated.div>
                                     </SwiperSlide>
                                 )
                             })

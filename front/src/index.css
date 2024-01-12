@@ -139,3 +139,5 @@ body {
 
 /* 부트스트랩 아이콘 */
 .bi-chevron-down.btntoggle::before {content: ' \F286' !important;}
+
+/* 슬라이드 애니메이션 */

@@ -7,6 +7,7 @@ import Notice from './comp/Notice';
 import Query from './comp/Query';
 import { Route, Routes } from 'react-router-dom';
 import Modals from './comp/Modal';
+import Footer from './comp/Footer';
 
 const Wrapping = () => {
     useEffect(()=>{
@@ -22,6 +23,7 @@ const Wrapping = () => {
                 <Route path="/com/notice" element={<Notice></Notice>}></Route>
                 <Route path="/sangdam/shinchung" element={<Query></Query>}></Route>
             </Routes>
+            <Footer></Footer>
         </div>
     );
 };

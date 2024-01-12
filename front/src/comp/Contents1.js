@@ -25,7 +25,14 @@ const Notice = styled.div`
     background-color:#F6F6F6;
     display: flex;
     padding: 10px;
+    @media (max-width: 630px) {
+        flex-direction: column;
+    }
     & h1 {
+        @media (max-width: 630px) {
+            width: 100%;
+            text-align: center;
+        }
         font-size: .9em;
         font-weight: 200 !important;
         line-height: 20px;
@@ -39,6 +46,10 @@ const Notice = styled.div`
         padding: 0;
         position: relative;
         & li {
+            @media (max-width: 630px) {
+                width: 100%;
+                text-align: center;
+            }
             font-size: .9em;
             font-weight: 200 !important;
             position: absolute;

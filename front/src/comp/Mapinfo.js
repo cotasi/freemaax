@@ -35,7 +35,7 @@ const Formwrap = styled.div`
     position: absolute;
     z-index: 100000000;
     right: 0;
-    bottom: 0;
+    bottom: 5%;
     background-color: #333;
     & form {
         position: absolute;
@@ -48,6 +48,8 @@ const Formwrap = styled.div`
         background-color: transparent;
         border: none;
         border-bottom: 1px solid white;
+        width: 60%;
+        display: block;
     }
     & button {
         border: none;

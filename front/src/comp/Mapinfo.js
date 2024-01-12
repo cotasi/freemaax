@@ -33,6 +33,7 @@ const Formwrap = styled.div`
     width: 30%;
     height: 30%;
     position: absolute;
+    z-index: 100000000;
     right: 0;
     bottom: 0;
     background-color: #333;

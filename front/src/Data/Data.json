@@ -29,15 +29,55 @@
         {
             "swiper2" : [
                 {
-                    "swiper2text1": "출근길버스..퇴근길 버스/각박한 세상 속에서",
-                    "swiper2text2": "혼잡도를 해결할 예약 시스템이 등장했습니다.",
-                    "swiper2lasttext": "아래 지도를 클릭하세요."
+                    "event":"이벤트가 발생했습니다 모두 집중해주세요!",
+                    "swiperslide":"1"
                 },
                 {
-                    "swiper2text1": "출근길버스..퇴근길 버스/각박한 세상 속에서",
-                    "swiper2text2": "혼잡도를 해결할 예약 시스템이 등장했습니다.",
-                    "swiper2lasttext": "아래 지도를 클릭하세요."
+                    "event":"이벤트가 발생했습니다 모두 집중해주세요!1",
+                    "swiperslide":"2"
+                },
+                {
+                    "event":"이벤트가 발생했습니다 모두 집중해주세요!2",
+                    "swiperslide":"3"
+                },
+                {
+                    "event":"이벤트가 발생했습니다 모두 집중해주세요!3",
+                    "swiperslide":"4"
+                },
+                {
+                    "event":"이벤트가 발생했습니다 모두 집중해주세요!4",
+                    "swiperslide":"5"
                 }
+                
+            ]
+        },
+        {
+            "swiper3best" : [
+                {
+                    "bestindex" : "1",
+                    "bestinfo" : "서울시 230번 버스",
+                    "bestimg": "/img/bus_01-removebg-preview.png"
+
+                },
+                {
+                    "bestindex" : "1",
+                    "bestinfo" : "서울시 230번 버스",
+                    "bestimg": "/img/bus_02-remove-preview.png"
+
+                },
+                {
+                    "bestindex" : "1",
+                    "bestinfo" : "서울시 230번 버스",
+                    "bestimg": "/img/bus_01-removebg-preview.png"
+
+                },
+                {
+                    "bestindex" : "1",
+                    "bestinfo" : "서울시 230번 버스",
+                    "bestimg": "/img/bus_01-removebg-preview.png"
+
+                }
+                
             ]
         }
     ]
@@ -45,24 +85,24 @@
     {
         "choice": [
             {
-                "region": "서울시",
-                "regionimg": "/img/region1-01.svg"
+                "region": "경기도",
+                "regionimg": "/img/region01.png"
             },
             {
-                "region" : "경기도",
-                "regionimg": "/img/region1-01.svg"
+                "region" : "서울시",
+                "regionimg": "/img/region02.png"
             },
             {
                 "region": "강원도",
-                "regionimg": "/img/region2-02.svg"
+                "regionimg": "/img/region02.png"
             },
             {
                 "region": "제주도",
-                "regionimg": "/img/region2-02.svg"
+                "regionimg": "/img/region02.png"
             },
             {
                 "region": "부산 광역시",
-                "regionimg": "/img/region2-02.svg"
+                "regionimg": "/img/region02.png"
             }
         ]
     },

@@ -30,8 +30,8 @@ const Mapwrapper = styled.div`
 `;
 
 const Formwrap = styled.div`
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     z-index: 100000000;
     right: 0;
@@ -42,11 +42,20 @@ const Formwrap = styled.div`
         bottom: 2%;
         left: 50%;
         transform: translateX(-50%);
+        display: flex;
     }
     & input {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid white;
+    }
+    & button {
+        border: none;
+        background-color: transparent;
+        & span {
+            display: block;
+            text-indent: -9999em;
+        }
     }
 
     & input::placeholder {
@@ -68,7 +77,9 @@ const Mapinfo = () => {
                 <Formwrap>
                     <form>
                         <input placeholder="지점을 입력하시오."></input>
-                        <button><span>검색</span></button>
+                        <button><span>검색</span>
+                        <i class="bi bi-search"></i>
+                        </button>
                     </form>
                 </Formwrap>
             </Mapwrapper>

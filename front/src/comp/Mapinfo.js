@@ -33,7 +33,21 @@ const Formwrap = styled.div`
     width: 30%;
     height: 30%;
     position: absolute;
+    right: 0;
+    bottom: 0;
     background-color: #333;
+    & form {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    & input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
     & input::placeholder {
         color: white;
     }

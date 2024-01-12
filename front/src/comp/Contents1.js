@@ -50,6 +50,11 @@ const Notice = styled.div`
                 width: 100%;
                 text-align: center;
             }
+            @media (max-width: 445px) {
+                white-space:nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
             font-size: .9em;
             font-weight: 200 !important;
             position: absolute;
@@ -85,6 +90,9 @@ const Popular = styled.div`
 const Popularsubject = styled.div`
      display: flex;
      margin-bottom: 3%;
+     @media (max-width: 1010px) {
+        flex-direction: column;
+     }
 `;
 
 const PSubject = styled.h1`
@@ -94,7 +102,9 @@ const PSubject = styled.h1`
 `;
 
 const PTab = styled.div`
-
+    @media (max-width: 1010px) {
+        margin-top: 3%;
+    }
 `;
 
 const Best = styled.button`

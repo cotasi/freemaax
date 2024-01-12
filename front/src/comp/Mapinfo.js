@@ -5,7 +5,8 @@ import { Map, MapMarker } from 'react-kakao-maps-sdk';
 const MapInfowrapper = styled.div`
     width: 60%;
     margin: 0 auto;
-    height: 250px;
+    height: 100%;
+    margin-bottom: 10%;
     & h2 {
         font-size: 1.5em;
         position: relative;

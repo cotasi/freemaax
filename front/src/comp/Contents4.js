@@ -62,6 +62,16 @@ const Eachgoods = styled.div`
     padding: 0 3%;
     border-right: 1px solid rgba(0,0,0,.2);
     border-bottom: 1px solid rgba(0,0,0,.2);
+    transition: all .4s;
+    &:hover {
+        background-color: black;
+        > div:nth-child(2) {
+            color: white;
+        }
+        > div:last-child {
+            color: white;
+        }
+    }
 `;
 
 const GoodsImg = styled.div`

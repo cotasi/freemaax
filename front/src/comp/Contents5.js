@@ -7,13 +7,14 @@ const Noticepresswrap = styled.div`
     & h2 {
         font-size: 1.5em;
         position: relative;
+        margin-bottom: 5%;
         &:after {
             content: '';
             position: absolute;
             display: block;
             left: 0;
             right: 0;
-            bottom: 23%;
+            bottom: -35%;
             height: 2px;
             background-color: black;
         }

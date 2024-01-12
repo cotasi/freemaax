@@ -91,7 +91,7 @@ body {
 
 .reswiper .swiper-wrapper { justify-content: center; transform: translate3d(0,0,0) !important; align-items: center;}
 
-.reswiper .swiper-slide { width: 150px !important; height: 20%; border: 1px solid #005585; border-right: none;}
+.reswiper .swiper-slide { width: 150px !important; height: 20%; border: 1px solid #005585; border-right: none; flex: 1;}
 
 .reswiper .swiper-slide:last-child { border-right: 1px solid #005585;}
 
@@ -105,7 +105,9 @@ body {
 
 .bestswiper .swiper-wrapper { align-items: stretch;}
 
-.bestswiper .swiper-slide { background-color: yellow;}
+.bestswiper .swiper-slide { height: auto;}
+
+.bestswiper .swiper-slide-active { border: 2px solid rgba(0,0,0,.4); margin: 3% 0; border-radius: 10px;}
 
 .bestswiper .swiper-button-next::after,
 .bestswiper .swiper-button-prev::after {font-size: 20px; font-weight: normal; color:black;}

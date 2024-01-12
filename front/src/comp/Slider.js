@@ -7,8 +7,9 @@ import styled from 'styled-components';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 
-import { Pagination, Navigation, Controller } from 'swiper/modules';
+import { Pagination, Navigation, Controller, Scrollbar } from 'swiper/modules';
 
 import Data from '../Data/Data.json';
 
@@ -18,7 +19,7 @@ const Slider = () => {
 
     const Slidermain = styled.div`
         width: 100%;
-        height: 600px;
+        height: 400px;
 
     `;
 
@@ -37,12 +38,13 @@ const Slider = () => {
 
     const Imagwrap = styled.div`
         width: 100%;
+        background-color: white;
     `;
 
     const Images = styled.img`
-        width: 100%;
-        height: 100%;
+        width: 70%;
         object-fit:cover;
+        transform: translateX(30%);
     `
 
     const Textwrap = styled.div`
@@ -53,19 +55,16 @@ const Slider = () => {
     `;
 
     const Textdivide = styled.div`
-        &:first-child {
-            font-size: 2.2em;
+        &:first-of-type {
+            font-size: 2.1em;
+            letter-spacing: -0.051em;
         }
-        &:last-child {
-            font-size: 1.9em;
-            font-weight: 200 !important;
+        &:nth-of-type(2) {
+            font-size: 2.1em;
         }
     `;
 
     const Formbtn = styled.button`
-        position: absolute;
-        bottom: 33%;
-        left: 0;
         border: none;
         background-color: #5f87f4;
         padding: 0;
@@ -73,13 +72,19 @@ const Slider = () => {
         border-radius: 30px;
         font-size: 0.9em;
         color: white;
+        margin-top: 5%;
+    `;
+
+    const Lower = styled.div`
+        font-weight: 200 !important;
+        padding-top: 6%;
     `;
 
 
     return (
         <>
             <Slidermain className="topswiper">
-               <Swiper navigation={true} modules={[Navigation,Pagination]} pagination={{type:'fraction'}}>
+               <Swiper navigation={true} modules={[Navigation,Pagination,Scrollbar]} scrollbar={{hide: true}}>
                 {
                     Data[0].swiper[0].swiper1.map((e,i)=>{
                         return(
@@ -90,11 +95,15 @@ const Slider = () => {
                                         <Textwrap>{
                                                 e.subject.split('/').map((첫,둘)=>{
                                                     return(
+                                                        <>
                                                         <Textdivide>{첫}</Textdivide>
+                                                        </>
                                                     )
                                                 })
-                                            }</Textwrap>
-                                        <Formbtn>지금 상담</Formbtn>
+                                            }
+                                            <Lower>{e.cant}</Lower>
+                                            <Formbtn>지금 상담</Formbtn>
+                                            </Textwrap>
                                     </Swipercontainer>
                                 </Swiperbgwrap>
                             </SwiperSlide>

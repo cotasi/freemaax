@@ -46,6 +46,9 @@ return (
                      <h2 className="m-0">언어 선택</h2>
                      <NavDropdown.Item href="#action/3.1">KR</NavDropdown.Item>
                      <NavDropdown.Item href="#action/3.1">EN</NavDropdown.Item>
+                     <h2 className="m-0">회원 기능</h2>
+                     <NavDropdown.Item href="#action/3.1">로그인</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.1">회원가입</NavDropdown.Item>
                 </NavDropdown>
                 <Button className={`${Hall.searchbtn} d-xl-flex d-none`}><span>검색하기</span>                     
                 </Button>
@@ -71,6 +74,20 @@ return (
                             );
                         })
                     }
+                    <Nav.Link as={Link}>
+                        회원기능
+                        <Nav className={`${Hall.mobilesub}`}>
+                            <Nav.Link>로그인</Nav.Link>
+                            <Nav.Link>회원가입</Nav.Link>
+                        </Nav>
+                    </Nav.Link>
+                    <Nav.Link as={Link}>
+                        언어 선택
+                        <Nav className={`${Hall.mobilesub}`}>
+                            <Nav.Link>KR</Nav.Link>
+                            <Nav.Link>EN</Nav.Link>
+                        </Nav>
+                    </Nav.Link>
                 </Nav>
             </div>
         </Navbar>

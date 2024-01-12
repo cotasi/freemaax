@@ -41,8 +41,8 @@
 
 .headerall .hcontainer .mobile > a {text-align: center; border-top: 1px solid rgba(255,255,255,.2); padding: 20px 0;}
 
-.headerall .hcontainer .mobile > a:hover .mobilesub {height: 120px;}
+.headerall .hcontainer .mobile > a:hover .mobilesub {min-height: 130px;}
 
-.headerall .hcontainer .mobile .mobilesub {height: 0; overflow: hidden; transition: all .4s; flex-direction: column;}
+.headerall .hcontainer .mobile .mobilesub {min-height: 0; height: 0; overflow: hidden; transition: all .4s; flex-direction: column;}
 
 .headerall .hcontainer .mobile .mobilesub a {padding: 0; padding-top: 15px; font-weight: lighter !important;}

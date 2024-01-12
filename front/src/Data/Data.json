@@ -6,22 +6,28 @@
                 {
                     "swiper1img": "/img/busslide01.jpg",
                     "index": "01",
-                    "subject":"다채로운/버스 즐기기를 시도합니다.",
+                    "subject":"버스예약 시스템 입점 기념/VIP 찬스 제공!",
+                    "cant":"지금 당장 예약 이벤트를 신청하세요!",
                     "text":"지금 상담",
-                    "bgc":"#f1e8e2"
+                    "dater":"01.01~02.01",
+                    "bgc":"#fff"
                 },
                 {
                     "swiper1img": "/img/busslide02.jpg",
                     "index": "02",
                     "subject":"다채로운/버스 즐기기",
+                    "cant":"지금 당장 예약 이벤트를 신청하세요!",
                     "text":"지금 상담",
+                    "dater":"01.01~02.01",
                     "bgc":"#fff"
                 },
                 {
                     "swiper1img": "/img/busslide03.jpg",
                     "index": "02",
                     "subject":"다채로운/버스 즐기기",
+                    "cant":"지금 당장 예약 이벤트를 신청하세요!",
                     "text":"지금 상담",
+                    "dater":"01.01~02.01",
                     "bgc":"fff"
                 }
             ]
@@ -79,6 +85,58 @@
                 }
                 
             ]
+        },
+        {
+            "fassionswiper" : [
+                {
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                },
+                {
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                },
+                {
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                },
+                {
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                },
+                {
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                },
+                {
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                },{
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                },
+                {
+                    "img1":"/img/cafe1.jpg",
+                    "img2":"/img/cafe2.jpg",
+                    "img3":"/img/cafe3.jpg",
+                    "texter":"전용 카페 VIP 코드 제공"
+                }
+
+            ]
         }
     ]
     },
@@ -122,8 +180,8 @@
                         "href":"com/real"
                     },
                     {
-                        "name":"서비스 소개",
-                        "href":"com/service"
+                        "name":"공지사항",
+                        "href":"com/Notice"
                     }
                 ]
             },
@@ -192,5 +250,118 @@
                 ]
             }
         ]
+    },
+    {
+        "Notice":[
+            {
+                "NIndex": "1",
+                "contents":"[안내] 티 크리에이터 3기 서류 합격자 발표",
+                "date":"2024.01.08"
+            },
+            {
+                "NIndex": "2",
+                "contents":"[안내] 티 크리에이터 3기 서류 합격자 발표",
+                "date":"2024.01.08"
+            },
+            {
+                "NIndex": "3",
+                "contents":"[안내] 티 크리에이터 3기 서류 합격자 발표",
+                "date":"2024.01.08"
+            },
+            {
+                "NIndex": "4",
+                "contents":"[안내] 티 크리에이터 3기 서류 합격자 발표",
+                "date":"2024.01.08"
+            }
+        ]
+    },
+    {
+       "goods": [
+        {
+            "coffee": [
+                {
+                    "coffeeimg": "/img/coffee01.jpeg",
+                    "coffeeinfo": "모마 오트 바리스타",
+                    "coffeeprice" :"8,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },{
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                },
+                {
+                    "coffeeimg": "/img/coffee02.png",
+                    "coffeeinfo": "딸기 얼그레이 하이볼",
+                    "coffeeprice" :"6,900"
+                }
+
+
+            ]
+        }
+       ] 
     }
 ]

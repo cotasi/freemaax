@@ -1,5 +1,4 @@
 import React, { useState, useEffect }from 'react';
-import C1 from '../scss/Contents1.module.scss';
 import Data from '../Data/Data.json';
 import gbus from '../Data/gyeonggibus.json';
 import styled from 'styled-components';
@@ -78,7 +77,7 @@ const Popularsubject = styled.div`
 `;
 
 const PSubject = styled.h1`
-    font-size: 1.3em;
+    font-size: 1.6em;
     padding-right: 2em;
     line-height: 40px;
 `;
@@ -95,7 +94,7 @@ const Best = styled.button`
     font-weight: 200 !important;
     border-radius: 30px;
     border: none;
-    margin-right: 2em;
+    margin-right: 1em;
     &.btnactive {
         background-color: #5f87f4;
         color: white;
@@ -144,7 +143,7 @@ const Contents1 = () => {
     const [swiperRef, setSwiperRef] = useState(null);
 
     return (
-        <div className={`${C1.backg}`}>
+        <div>
             <Notice>
                 <h1 className="m-0 col-2">공지사항</h1>
                 <ul className="col-12 slides">

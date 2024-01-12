@@ -26,7 +26,18 @@ const MapInfowrapper = styled.div`
 const Mapwrapper = styled.div`
     width: 100%;
     height: 400px;
+    position: relative;
 `;
+
+const Formwrap = styled.div`
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    background-color: #333;
+    & input::placeholder {
+        color: white;
+    }
+`
 
 const Mapinfo = () => {
 
@@ -39,6 +50,12 @@ const Mapinfo = () => {
                      level={3}>
                         <MapMarker position = {{ lat: 33.55635, lng: 126.795841}}></MapMarker>
                      </Map>
+                <Formwrap>
+                    <form>
+                        <input placeholder="지점을 입력하시오."></input>
+                        <button><span>검색</span></button>
+                    </form>
+                </Formwrap>
             </Mapwrapper>
         </MapInfowrapper>
     );

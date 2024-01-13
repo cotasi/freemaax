@@ -23,7 +23,7 @@ const Subcript = styled.div`
     width: 60%;
     margin: 0 auto;
     margin-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 40px;
     & > h2 {
         font-size: 1.6em;
         padding-bottom: 2%;

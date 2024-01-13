@@ -22,7 +22,7 @@ return (
     <div className={`${Hall.headerall}`}>
         <Navbar expand="lg" className="bg-body-teriary position-relative">
             <div className={`${Hall.hcontainer} d-flex justify-content-between align-items-center`}>
-                <Navbar.Brand as={Link} to="/"><img src="/img/freemax_logo.png" alt="logo"></img></Navbar.Brand>
+                <Navbar.Brand as={Link} to="/" className="logobar"><img src="/img/freemax_logo.png" alt="logo"></img></Navbar.Brand>
                 <Nav className={`${Hall.navmain} d-xl-flex d-none ham`}>
                     {
                         Data[2].menu.map((첫,둘)=>{

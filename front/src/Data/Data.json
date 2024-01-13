@@ -35,26 +35,25 @@
         {
             "swiper2" : [
                 {
-                    "event":"이벤트가 발생했습니다 모두 집중해주세요!",
-                    "swiperslide":"1"
+                    "swiper2img": "/img/menu_1.jpg",
+                    "swiper2ject" : "커피 상품"
                 },
                 {
-                    "event":"이벤트가 발생했습니다 모두 집중해주세요!1",
-                    "swiperslide":"2"
+                    "swiper2img": "/img/menu_2.jpg",
+                    "swiper2ject": "과자 상품"
                 },
                 {
-                    "event":"이벤트가 발생했습니다 모두 집중해주세요!2",
-                    "swiperslide":"3"
+                    "swiper2img": "/img/menu_3.jpg",
+                    "swiper2ject": "핸드백 상품"
                 },
                 {
-                    "event":"이벤트가 발생했습니다 모두 집중해주세요!3",
-                    "swiperslide":"4"
+                    "swiper2img": "/img/menu_4.jpg",
+                    "swiper2ject": "향수 상품"
                 },
                 {
-                    "event":"이벤트가 발생했습니다 모두 집중해주세요!4",
-                    "swiperslide":"5"
+                    "swiper2img": "/img/menu_5.png",
+                    "swiper2ject": "트리트먼트 상품"
                 }
-                
             ]
         },
         {
@@ -62,25 +61,29 @@
                 {
                     "bestindex" : "1",
                     "bestinfo" : "서울시 230번 버스",
-                    "bestimg": "/img/bus_01-removebg-preview.png"
+                    "bestimg": "/img/bus_01.jpg",
+                    "logo" : "/img/seoullogo.png"
 
                 },
                 {
                     "bestindex" : "1",
                     "bestinfo" : "서울시 230번 버스",
-                    "bestimg": "/img/bus_02-remove-preview.png"
+                    "bestimg": "/img/bus_02-remove-preview.png",
+                    "logo" : "/img/seoullogo.png"
 
                 },
                 {
                     "bestindex" : "1",
                     "bestinfo" : "서울시 230번 버스",
-                    "bestimg": "/img/bus_01-removebg-preview.png"
+                    "bestimg": "/img/bus_01-removebg-preview.png",
+                    "logo" : "/img/seoullogo.png"
 
                 },
                 {
                     "bestindex" : "1",
                     "bestinfo" : "서울시 230번 버스",
-                    "bestimg": "/img/bus_01-removebg-preview.png"
+                    "bestimg": "/img/bus_01-removebg-preview.png",
+                    "logo" : "/img/seoullogo.png"
 
                 }
                 

@@ -2,7 +2,8 @@
 body {
     font-family: 'Pretendard' !important;
     font-weight: 600 !important;
-    min-width: 560px;
+    min-width: 300px;
+    overflow-x: hidden;
 }
 
 /* 언어선택 */
@@ -104,14 +105,18 @@ body {
 
 .twoswiper #map { left: 50% !important; transform: translateX(-50%) !important;}
 
+.bestswiper { height: 100%;}
+
+.bestswiper .swiper-slide:hover { border:3px solid #005585;}
+
 .bestswiper .swiper-wrapper { align-items: stretch;}
 
-.bestswiper .swiper-slide { height: auto; opacity: .2;}
+.bestswiper .swiper-slide { height: auto; filter:grayscale(100%); background-color: #ebebeb; border-radius:20px; overflow: hidden; box-shadow:0px 8px 24px rgba(0, 0, 0, 0.05);}
 
-.bestswiper .swiper-slide-active { border: 2px solid rgba(0,0,0,.4); margin: 3% 0; border-radius: 10px; opacity: 1;}
+.bestswiper .swiper-slide-active { filter: grayscale(0);}
 
 .bestswiper .swiper-button-next::after,
-.bestswiper .swiper-button-prev::after {font-size: 20px; font-weight: normal; color:black;}
+.bestswiper .swiper-button-prev::after {font-size: 55px; font-weight: normal; color:black;}
 
 .imgswiper {height: 100%; padding-bottom:3%}
 .imgswiper .swiper-wrapper {padding-bottom: 3%;}

@@ -5,10 +5,10 @@
     .topswiper > div {
         height:400%;
     }
-    .bestswiper {
-        height: 100%;
-    }
-    .bestswiper .swiper-slide-active img {
-        object-fit: none;
+}
+
+@media (max-width: 400px) {
+    .logobar img {
+        width: 200px !important;
     }
 }

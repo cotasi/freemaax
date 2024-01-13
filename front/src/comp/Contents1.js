@@ -17,76 +17,11 @@ import 'swiper/css/navigation';
 import { FreeMode, Pagination, Navigation, Controller, EffectFade } from 'swiper/modules';
 import { Fade } from 'react-bootstrap';
 
-const Notice = styled.div`
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 110px;
-    background-color:#F6F6F6;
-    display: flex;
-    padding: 10px;
-    @media (max-width: 630px) {
-        flex-direction: column;
-    }
-    & h1 {
-        @media (max-width: 630px) {
-            width: 100%;
-            text-align: center;
-        }
-        font-size: .9em;
-        font-weight: 200 !important;
-        line-height: 20px;
-    }
-
-    & ul {
-        height: 20px;
-        overflow: hidden;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        & li {
-            @media (max-width: 630px) {
-                width: 100%;
-                text-align: center;
-            }
-            @media (max-width: 445px) {
-                white-space:nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            font-size: .9em;
-            font-weight: 200 !important;
-            position: absolute;
-            &:nth-child(1) {
-                left: 0;
-                top: 0;
-            }
-            &:nth-child(2) {
-                left: 0;
-                top: 20px;
-            }
-            &:nth-child(3) {
-                left: 0;
-                top: 40px;
-            }
-            &:nth-child(4) {
-                left: 0;
-                top: 60px;
-            }
-            &:nth-child(5) {
-                left: 0;
-                top: 60px;
-            }
-        }
-    }
-`;
-
 const Popular = styled.div`
-    width: 60%;
+    max-width: 60%;
     margin: 0 auto;
     @media (max-width: 730px) {
-        width: 100%;
+        max-width: 100%;
         margin: 0;
     }
 `;
@@ -154,35 +89,111 @@ const Weekend = styled.button`
 
 const PopularSwiper = styled.div`
     width: 100%;
-    height: 300px;
+    height: 500px;
+    padding-bottom: 80px;
 `;
 
 const Buswrap = styled.div`
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 50%;
     margin: 0 auto;
 
     & > img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
         @media (max-width: 730px) {
-            object-fit: none;
+            object-fit: cover;
         }
     }
 
     & + div {
+        height: 20%;
         text-align: center;
         font-weight: 200 !important;
-        @media (max-width: 830px) {
-            font-size: .95em !important;
+        & img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
         }
-        @media (max-width: 700px) {
-            font-size: .85em !important;
+       
+        & + div {
+            text-align: center;
+            font-size: 1.3em;
+            line-height: 1.3em;
+            @media (max-width: 730px) {
+                padding-top: 60px;
+                font-size: 1.6em;
+            }
         }
-        @media (max-width: 354px) {
-            display: none;
+    }
+`;
+
+const Topmenu = styled.div`
+    max-width: 60%;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    gap: 60px;
+    @media (max-width: 730px) {
+        display: none !important;
+    }
+    & a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+    }
+    & a div:first-child {
+
+        max-width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        transtion: all .4s;
+        position: relative;
+        @media (max-width: 1270px) {
+            max-width: 60px;
+            height: 60px;
         }
+        @media (max-width: 940px) {
+            max-width: 35px;
+            height: 35px;
+        }
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & a div:last-child {
+        text-align: center;
+        padding-top: 20px;
+        color: black;
+        font-weight: 200 !important;
+        @media (max-width: 1030px) {
+            font-size: .7em;
+        }
+        @media (max-width: 940px) {
+            font-size: 0;
+        }
+    }
+    & a:hover div:last-child {
+        color: #5f87f4;
+    }
+    & a:hover div:first-child::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.3);
     }
 `;
 
@@ -190,32 +201,42 @@ const Buswrap = styled.div`
 const Contents1 = () => {
     const [swiperRef, setSwiperRef] = useState(null);
 
+    const swiperbreakpoint = {
+        1130: {
+            slidesPerView: 4
+        },
+        760: {
+            slidesPerView: 2
+        }
+    }
+
     return (
         <div>
-            <Notice>
-                <h1 className="m-0 col-2">공지사항</h1>
-                <ul className="col-12 slides">
-                    {
-                        Data[0].swiper[1].swiper2.map((e,i)=>{
-                            return(
-                                <li className={`one${i}`}>{e.event}</li>
-                            )
-                        })
-                    }
-                </ul>
-            </Notice>
+            <Topmenu className="d-flex">
+                {
+                    Data[0].swiper[1].swiper2.map((eee,iii)=>{
+                        return(
+                            <Link>
+                                <div><img src={eee.swiper2img} alt={iii}></img></div>
+                                <div>{eee.swiper2ject}</div>
+                            </Link>
+                        );
+                    })
+                }
+            </Topmenu>
             <Popular>
                 <Popularsubject>
                     <PSubject className="m-0">오늘은 어떤 버스를 예약해볼까요?</PSubject>
                 </Popularsubject>
                 <PopularSwiper>
-                    <Swiper onSwiper={setSwiperRef} modules={[Navigation]} navigation={true} slidesPerView={3} centeredSlides={true} spaceBetween={10} className="bestswiper">
+                    <Swiper breakpoints={swiperbreakpoint} initialSlide={1} onSwiper={setSwiperRef} modules={[Navigation]} navigation={true} loop={true} slidesPerView={1} centeredSlides={true} spaceBetween={10} className="bestswiper">
                         {
                             Data[0].swiper[2].swiper3best.map((e,i)=>{
                                 return(
                                     <SwiperSlide>
                                         <Buswrap><img src={e.bestimg} alt={i}></img></Buswrap>
-                                        <div>{e.bestinfo}</div>
+                                        <div><img src={e.logo} alt="logo"></img></div>
+                                        <div className="bestinfo">{e.bestinfo}</div>
                                     </SwiperSlide>
                                 )
                             })

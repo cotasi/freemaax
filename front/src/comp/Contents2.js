@@ -92,13 +92,19 @@ const Contents2 = () => {
         from: {opacity: 0},
     });
 
+    const twobreak = {
+        900: {
+            slidesPerView:3
+        }
+    }
+
     return (
         <div>
            <Subcript>
                 <h2>예약 시스템 혜택</h2>
                 <p>예약 시스템을 이용하시는 VIP 고객님께 다음과 같은 혜택을 제공합니다.</p>
                 <PhotoSwiper>
-                    <Swiper initialSlide={1} loop={true} onSwiper={setSwiperRefs} scrollbar={{hide: true,}} modules={[Navigation,Scrollbar,Pagination,Autoplay]} slidesPerView={3} centeredSlides={true} spaceBetween={10} /* autoplay={{delay:2500,disableOnInteraction: false,}} */ className="imgswiper">
+                    <Swiper initialSlide={1} loop={true} onSwiper={setSwiperRefs} scrollbar={{hide: true,}} modules={[Navigation,Scrollbar,Pagination,Autoplay]} slidesPerView={2} breakpoints={twobreak} centeredSlides={true} spaceBetween={10} /* autoplay={{delay:2500,disableOnInteraction: false,}} */ className="imgswiper">
                         {
                             Data[0].swiper[3].fassionswiper.map((ee,ii)=>{
                                 return(
